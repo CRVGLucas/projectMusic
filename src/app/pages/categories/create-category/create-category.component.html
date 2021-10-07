@@ -1,0 +1,5 @@
+<form [formGroup]="formCreateCategory" (submit)="createCategory()">
+    <input type="text" formControlName="name"/>
+    <input type="text" formControlName="description"/>
+    <button [disabled]="formCreateCategory.invalid" type="submit">Criar categoria</button>
+</form>

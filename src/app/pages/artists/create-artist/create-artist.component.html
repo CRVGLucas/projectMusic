@@ -1,0 +1,10 @@
+<form [formGroup]="formCreateArtist" (submit)="createArtist()">
+    <input type="text" formControlName="name"/>
+    <textarea type="text" formControlName="description"></textarea>
+    <select formControlName="category_id" >
+        <option value="" selected>Selecione uma categoria</option>
+        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+    </select>    
+    <input type="file" accept="image/*" formControlName="image"/>
+    <button [disabled]="formCreateArtist.invalid" type="submit">Criar artista</button>
+</form>

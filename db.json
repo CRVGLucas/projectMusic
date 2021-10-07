@@ -1,0 +1,26 @@
+{
+  "artists": [
+    {
+      "name": "Ice Nine Kills",
+      "description": "seila",
+      "category_id": "a5380269-dd2e-492d-ab55-7739c7d0a425",
+      "image": "C:\\fakepath\\download.jpg",
+      "id": "ae033ff3-e61d-4b14-8585-7037521dab82"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Deathcore",
+      "description": "sla",
+      "id": "3f67e9ba-616b-4806-b5a0-85fdfc27ec17"
+    },
+    {
+      "name": "Metalcore",
+      "description": null,
+      "id": "a5380269-dd2e-492d-ab55-7739c7d0a425"
+    }
+  ],
+  "discography": [],
+  "users": [],
+  "playlist": []
+}

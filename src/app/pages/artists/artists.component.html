@@ -1,0 +1,18 @@
+<router-outlet>
+    <article>
+        <div class="menu-artists">
+            <a routerLink="criar">Criar artista</a>
+            <input type="search" name="artist" id="artist-search" placeholder="Buscar por...">
+        </div>
+
+        <div *ngIf="artists.length > 0">
+            <div class="card-artist" *ngFor="let artist of artists">
+                <img [src]="artist.image"/>
+                <div class="card-artist-content">
+                    <span>{{ artist.name }}</span>
+                </div>
+            </div>
+        </div>
+    </article>
+</router-outlet>
+
