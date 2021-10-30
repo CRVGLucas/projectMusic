@@ -1,0 +1,21 @@
+.header-container{
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        background: rgba(19, 18, 18);
+    }
+    li{
+        padding: 10px; 
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    div{
+        display: flex;
+    }
+}

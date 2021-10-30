@@ -14,6 +14,11 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { CreateCategoryComponent } from './pages/categories/create-category/create-category.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AlbunsComponent } from './pages/albuns/albuns.component';
+import { AlbumDetailComponent } from './pages/albuns/album-detail/album-detail.component';
+import { CreateAlbumComponent } from './pages/albuns/create-album/create-album.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalModule } from 'ngb-modal';
 
 @NgModule({
   declarations: [
@@ -25,14 +30,19 @@ import { ReactiveFormsModule } from '@angular/forms';
     ArtistInfoComponent,
     ArtistsComponent,
     CategoriesComponent,
-    CreateCategoryComponent
+    CreateCategoryComponent,
+    AlbunsComponent,
+    AlbumDetailComponent,
+    CreateAlbumComponent
   ],
   imports: [
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

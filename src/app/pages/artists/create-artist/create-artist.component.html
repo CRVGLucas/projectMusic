@@ -1,10 +1,30 @@
-<form [formGroup]="formCreateArtist" (submit)="createArtist()">
-    <input type="text" formControlName="name"/>
-    <textarea type="text" formControlName="description"></textarea>
-    <select formControlName="category_id" >
-        <option value="" selected>Selecione uma categoria</option>
-        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
-    </select>    
-    <input type="file" accept="image/*" formControlName="image"/>
-    <button [disabled]="formCreateArtist.invalid" type="submit">Criar artista</button>
-</form>
+
+<div class="artist-register-header">
+    <h5>Criar artista</h5>
+    <button (click)="closeModal()"><i class="bi bi-x" style="color: red; font-size: 20px;"></i></button>
+</div>
+<div>
+    <form [formGroup]="formCreateArtist" (submit)="createArtist()" class="form-group">
+        <div class="artist-register-container">
+            <label for="input-name">Nome</label>
+            <input id="input-name" class="form-control" type="text" formControlName="name"/>
+
+            <label for="input-description">Descrição</label>
+            <textarea id="input-description" class="form-control" type="text" formControlName="description"></textarea>
+
+            <label for="input-category">Categoria</label>
+            <select id="input-category" class="form-control" formControlName="category_id" >
+                <option value="" selected>Selecione uma categoria</option>
+                <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+            </select>   
+
+            <label for="input-image">URL da imagem</label>
+            <input id="input-image" class="form-control" type="url" placeholder="https://.." formControlName="image"/>
+            
+            <button [disabled]="formCreateArtist.invalid" type="submit">Criar artista</button>
+        </div>
+    </form>
+</div>
+ 
+
+

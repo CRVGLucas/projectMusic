@@ -1,11 +1,32 @@
 {
   "artists": [
     {
-      "name": "Ice Nine Kills",
-      "description": "seila",
+      "name": "A Day to Remember",
+      "description": "A Day to Remember é uma banda americana de rock formada na cidade de Ocala, na Flórida, em 2003. Tem álbuns lançados sob os selos das gravadoras Indianola Records e Victory Records, sendo a segunda a responsável pelo lançamento de 3 álbuns de estúdio. ",
       "category_id": "a5380269-dd2e-492d-ab55-7739c7d0a425",
-      "image": "C:\\fakepath\\download.jpg",
-      "id": "ae033ff3-e61d-4b14-8585-7037521dab82"
+      "image": "https://rollingstone.uol.com.br/media/_versions/a-day-to-remember-divulgacao_widelg.jpg",
+      "id": "b3d9ad47-1cf2-44d6-8379-70385ae6756e"
+    },
+    {
+      "name": "Ice Nine Kills",
+      "description": "Ice Nine Kills é uma banda americana de heavy metal de Boston, Massachusetts, que assinou contrato com a Fearless Records. Mais conhecido por suas letras inspiradas no terror, Ice Nine Kills foi formado em sua primeira encarnação em 2000 pelos amigos do colégio Spencer Charnas e Jeremy Schwartz.",
+      "category_id": "a5380269-dd2e-492d-ab55-7739c7d0a425",
+      "image": "https://i1.wp.com/rockdeverdade.com.br/wp-content/uploads/2020/01/iceninekills_2018.png?resize=768%2C483&ssl=1",
+      "id": "4b182308-7241-4b4f-89dd-d8f4352cc618"
+    },
+    {
+      "name": "Bring Me the Horizon",
+      "description": "Bring Me the Horizon é uma banda britânica de rock, formada em 2004 em Sheffield, South Yorkshire. O grupo é composto atualmente pelo vocalista Oliver Sykes, o guitarrista Lee Malia, o baixista Matt Kean, o baterista Matt Nicholls e o tecladista Jordan Fish.",
+      "category_id": "a5380269-dd2e-492d-ab55-7739c7d0a425",
+      "image": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/12/bring-me-the-horizon-nova.jpg",
+      "id": "4c596a58-b2d3-4c1b-b5db-fd3f0d0390ef"
+    },
+    {
+      "name": "Gojira",
+      "description": "Gojira é uma banda de death metal progressivo francesa formada em 1996 em Baiona, França. Formado inicialmente com o nome de Godzilla, a banda alterou o nome em 2001.",
+      "category_id": "a5380269-dd2e-492d-ab55-7739c7d0a425",
+      "image": "https://whiplash.net/imagens_promo/gojira_promo_por_gabrielle_duplantier.jpg",
+      "id": "6c5a888b-1e56-422d-9621-de84242f15dc"
     }
   ],
   "categories": [
@@ -18,9 +39,14 @@
       "name": "Metalcore",
       "description": null,
       "id": "a5380269-dd2e-492d-ab55-7739c7d0a425"
+    },
+    {
+      "name": "Post-Hardcore",
+      "description": "",
+      "id": "64c488b0-2618-4e59-8d73-21a12011baf6"
     }
   ],
-  "discography": [],
+  "albuns": [],
   "users": [],
   "playlist": []
 }

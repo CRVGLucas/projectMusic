@@ -1,0 +1,16 @@
+.artist-register-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.artist-register-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-control{
+    margin: 10px 0
+}

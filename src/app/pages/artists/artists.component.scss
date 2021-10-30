@@ -1,0 +1,44 @@
+
+
+.menu-artists{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    a{
+        color:white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    input{
+        background: rgba(19, 18, 18);
+        border:none;
+        color:white;
+        border-radius: 5px;
+        padding:5px;
+    }
+}
+
+.list-artist-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-artist{
+    
+    border-radius: 5px;
+    height: 300px;
+    width: 200px;
+    border: 1px solid rgb(248, 238, 238);
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 200px; height: 200px;
+        object-fit: cover ;
+        clear: both;
+    }
+    .card-artist-content{
+    }
+}
