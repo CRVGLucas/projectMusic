@@ -1,1 +1,7 @@
-<p>artist-info works!</p>
+<div class="artist-container-description">
+    <h5>{{ artist.name }}</h5>
+    <img [src]="artist.image"/>
+    <p>{{ artist.description }}</p>
+    <h4>Discografia</h4>
+    <span (click)="createAlbumArtist()">Adicionar novo album</span>
+</div>

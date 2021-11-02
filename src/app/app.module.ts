@@ -19,6 +19,8 @@ import { AlbumDetailComponent } from './pages/albuns/album-detail/album-detail.c
 import { CreateAlbumComponent } from './pages/albuns/create-album/create-album.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalModule } from 'ngb-modal';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ModalModule } from 'ngb-modal';
     CreateCategoryComponent,
     AlbunsComponent,
     AlbumDetailComponent,
-    CreateAlbumComponent
+    CreateAlbumComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     ReactiveFormsModule,

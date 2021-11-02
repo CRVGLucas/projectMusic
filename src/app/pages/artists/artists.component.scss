@@ -27,18 +27,20 @@
 }
 
 .card-artist{
-    
     border-radius: 5px;
-    height: 300px;
-    width: 200px;
-    border: 1px solid rgb(248, 238, 238);
+    color: white;
+    font-size: 19px;
+    height: 280px;
     overflow: hidden;
+    text-align: center;
+    width: 200px;
     img{
         position: relative;
         width: 200px; height: 200px;
         object-fit: cover ;
         clear: both;
     }
-    .card-artist-content{
+    span{
+        vertical-align: middle;
     }
 }
