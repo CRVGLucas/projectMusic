@@ -1,0 +1,22 @@
+<article class="artist-container">
+    <div class="menu-artists">
+        <a (click)="openCreateArtistModal()">Criar artista</a>
+
+        <div>
+            <form>
+                <input type="search" formControlName="search" id="artist-search" placeholder="Buscar por..."
+                    (keyup)="searchArtist($event)" />
+            </form>
+        </div>
+    </div>
+</article>
+
+<div *ngIf="artists.length > 0" class="list-artist-container">
+    <div class="card-artist" *ngFor="let artist of artistsCopy" [routerLink]="'/artistas/info/'+artist.id">
+        <img [src]="artist?.image" />
+        <div class="card-artist-content">
+            <span>{{ artist?.name }}</span>
+            <span>{{ artist?.category }}</span>
+        </div>
+    </div>
+</div>

@@ -10,7 +10,7 @@ import { AppService } from 'src/app/app.service';
 })
 export class RegisterComponent implements OnInit {
   formRegisterUser: FormGroup| any;
-  constructor(private appService: AppService, private uuid: ) { 
+  constructor(private appService: AppService) { 
     this.formRegisterUser = new FormGroup({
       id: new FormControl(''),
       name: new FormControl('', Validators.required),

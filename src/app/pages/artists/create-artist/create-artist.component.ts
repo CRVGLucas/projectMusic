@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { CategoriesService } from '../../categories/categories.service';
 import { ArtistsService } from '../artists.service';
 import { ModalComponent } from 'ngb-modal';
@@ -14,7 +14,9 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class CreateArtistComponent implements OnInit {
   formCreateArtist: FormGroup | any
   categories: any = []
-  constructor(private activeModal: NgbActiveModal,private artistsService: ArtistsService, private categoriesService: CategoriesService) {
+
+  imagens = []
+  constructor(private activeModal: NgbActiveModal, private artistsService: ArtistsService, private categoriesService: CategoriesService) {
     this.categoriesService.getCategories().subscribe(categories => this.categories = categories)
   }
 
@@ -23,12 +25,14 @@ export class CreateArtistComponent implements OnInit {
       name: new FormControl('', Validators.required),
       description: new FormControl(''),
       category_id: new FormControl('', Validators.required),
-      image: new FormControl('', Validators.required),
+      image: new FormArray(
+        [new FormControl('image')]
+      ),
     })
   }
 
-  createArtist(){
-    console.log("Formulario aqui: ",this.formCreateArtist.value)
+  createArtist() {
+    console.log("Formulario aqui: ", this.formCreateArtist.value)
     this.artistsService.createArtist(this.formCreateArtist.value).subscribe(
       (result) => {
         console.log("Artista criado com sucesso !")
@@ -41,8 +45,16 @@ export class CreateArtistComponent implements OnInit {
     )
   }
 
-  closeModal(){
+  closeModal() {
     this.activeModal.close()
+  }
+
+  adicionar() {
+    let imagensFormArray = this.formCreateArtist.value.image as FormArray;
+
+    imagensFormArray.push(
+      new FormControl('image')
+    )
   }
 
 }
